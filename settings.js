@@ -55,7 +55,7 @@ var settings = module.exports = {
 
     // [v1.x] You can protect the user interface with a userid and password by using the following property
     // the password must be an md5 hash  eg.. 5f4dcc3b5aa765d61d8327deb882cf99 ('password')
-    // httpAdminAuth: {user:"user",pass:"5f4dcc3b5aa765d61d8327deb882cf99"},
+    //  httpAdminAuth: {user:"sonu",pass:"5f4dcc3b5aa765d61d8327deb882cf99"},
 
     /*******************************************************************************
      * Flow File and User Directory Settings
@@ -113,14 +113,14 @@ var settings = module.exports = {
     /** To password protect the Node-RED editor and admin API, the following
      * property can be used. See http://nodered.org/docs/security.html for details.
      */
-    //adminAuth: {
-    //    type: "credentials",
-    //    users: [{
-    //        username: "admin",
-    //        password: "$2a$08$zZWtXTja0fB1pzD4sHCMyOCMYz2Z6dNbM6tl8sJogENOMcxWV9DN.",
-    //        permissions: "*"
-    //    }]
-    //},
+    adminAuth: {
+       type: "credentials",
+       users: [{
+           username: "admin",
+           password: "$2b$08$1gzZjGhERNeOUtgJiy88SOA9m.9pTd0xK30iBwrAECrnuiTt/r9TC",
+           permissions: "*"
+       }]
+    },
 
     /** The following property can be used to enable HTTPS
      * This property can be either an object, containing both a (private) key
